@@ -19,6 +19,7 @@
 - [开发组(Dev)](开发组(Dev)/README.md)
   - [包(Package)](开发组(Dev)/包(Package)/README.md)
   - [编译器(Compiler)](开发组(Dev)/编译器(Compiler)/README.md)
+    - [基于RunCode的测试方案](开发组(Dev)/编译器(Compiler)/基于RunCode的测试方案.md)
   - [应用(App)](开发组(Dev)/应用(App)/README.md)
   - [运行环境(Env)](开发组(Dev)/运行环境(Env)/README.md)
   - [综合讨论(Common)](开发组(Dev)/综合讨论(Common)/README.md)

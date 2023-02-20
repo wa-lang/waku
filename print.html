@@ -1,0 +1,419 @@
+<!DOCTYPE HTML>
+<html lang="zh" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>凹库凹库</title>
+                <meta name="robots" content="noindex" />
+                
+
+        <!-- Custom HTML head -->
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="凹语言资料库">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+                <link rel="icon" href="favicon.svg">
+                        <link rel="shortcut icon" href="favicon.png">
+                <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+                <link rel="stylesheet" href="css/print.css" media="print">
+        
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+                <link rel="stylesheet" href="fonts/fonts.css">
+        
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+            </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item affix "><a href="index.html">凹库凹库！</a></li><li class="chapter-item "><a href="站务/index.html"><strong aria-hidden="true">1.</strong> 站务</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="站务/灌水/index.html"><strong aria-hidden="true">1.1.</strong> 灌水</a></li><li class="chapter-item "><a href="站务/新人报到/index.html"><strong aria-hidden="true">1.2.</strong> 新人报到</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="站务/新人报到/丁尔男.html"><strong aria-hidden="true">1.2.1.</strong> 丁尔男</a></li><li class="chapter-item "><a href="站务/新人报到/柴树杉.html"><strong aria-hidden="true">1.2.2.</strong> 柴树杉</a></li><li class="chapter-item "><a href="站务/新人报到/赵普明.html"><strong aria-hidden="true">1.2.3.</strong> 赵普明</a></li></ol></li><li class="chapter-item "><a href="站务/站务讨论/index.html"><strong aria-hidden="true">1.3.</strong> 站务讨论</a></li></ol></li><li class="chapter-item "><a href="用户组(User)/index.html"><strong aria-hidden="true">2.</strong> 用户组(User)</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="用户组(User)/新手入门/index.html"><strong aria-hidden="true">2.1.</strong> 新手入门</a></li><li class="chapter-item "><a href="用户组(User)/综合讨论/index.html"><strong aria-hidden="true">2.2.</strong> 综合讨论</a></li><li class="chapter-item "><a href="用户组(User)/进阶使用/index.html"><strong aria-hidden="true">2.3.</strong> 进阶使用</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="用户组(User)/进阶使用/编译标记runtime_getter和runtime_setter的使用.html"><strong aria-hidden="true">2.3.1.</strong> 编译标记runtime_getter和runtime_setter的使用.md</a></li></ol></li></ol></li><li class="chapter-item "><a href="开发组(Dev)/index.html"><strong aria-hidden="true">3.</strong> 开发组(Dev)</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="开发组(Dev)/包(Package)/index.html"><strong aria-hidden="true">3.1.</strong> 包(Package)</a></li><li class="chapter-item "><a href="开发组(Dev)/编译器(Compiler)/index.html"><strong aria-hidden="true">3.2.</strong> 编译器(Compiler)</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="开发组(Dev)/编译器(Compiler)/基于RunCode的测试方案.html"><strong aria-hidden="true">3.2.1.</strong> 基于RunCode的测试方案</a></li></ol></li><li class="chapter-item "><a href="开发组(Dev)/应用(App)/index.html"><strong aria-hidden="true">3.3.</strong> 应用(App)</a></li><li class="chapter-item "><a href="开发组(Dev)/运行环境(Env)/index.html"><strong aria-hidden="true">3.4.</strong> 运行环境(Env)</a></li><li class="chapter-item "><a href="开发组(Dev)/综合讨论(Common)/index.html"><strong aria-hidden="true">3.5.</strong> 综合讨论(Common)</a></li></ol></li><li class="chapter-item "><a href="决策委员会(Board)/index.html"><strong aria-hidden="true">4.</strong> 决策委员会(Board)</a></li></ol>            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                                                <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                                            </div>
+
+                    <h1 class="menu-title">凹库凹库</h1>
+
+                    <div class="right-buttons">
+                                                <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                                                                        <a href="https://github.com/wa-lang/waku" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                                                
+                    </div>
+                </div>
+
+                                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="凹库凹库"><a class="header" href="#凹库凹库">凹库凹库！</a></h1>
+<p><img src="wakuwaku.png" alt="" /></p>
+<p><strong>凹库</strong> 是“凹语言资料库”的简称，用于社区资料搜集、讨论汇总。</p>
+<hr />
+<h2 id="如何阅读"><a class="header" href="#如何阅读">如何阅读</a></h2>
+<p>克隆本仓库至本地或在线浏览。</p>
+<p>目录为分类版块，子目录为子版块，目录下的 <code>.md</code> 文件为属于该版块的资料帖。所有名为 <code>res</code> 的目录为保留目录，用于存放本版块下帖子的外部引用文件。</p>
+<hr />
+<h2 id="版块结构"><a class="header" href="#版块结构">版块结构</a></h2>
+<pre><code>waku
+  |- 决策委员会(Board)-------决策委员会公开信息
+  |
+  |- 开发组(Dev)-------------凹语言项目的开发
+  |  |- 包(Package)----------功能包
+  |  |- 编译器(Compiler)-----编译器
+  |  |- 应用(App)------------凹语言应用程序
+  |  |- 运行环境(Env)--------程序运行环境，如 Playground 等框架
+  |  |- 综合讨论(Common)-----日常开发讨论、开发管理
+  |
+  |- 用户组(User)------------凹语言使用
+  |  |- 进阶使用-------------进阶技巧
+  |  |- 新手入门-------------入门使用及问答
+  |  |- 综合讨论-------------日常使用讨论、及无法归类的内容
+  |
+  |- 站务--------------------凹库站务
+     |- 灌水
+     |- 新人报到-------------新人自我介绍
+     |- 站务讨论-------------凹库功能讨论、建站提议
+</code></pre>
+<hr />
+<h2 id="如何提交资料贴"><a class="header" href="#如何提交资料贴">如何提交资料贴</a></h2>
+<p>您可以在已有板块下发起新增资料贴的 pr，资料贴必须为 <code>.md</code> 文件。假设新增的资料贴名为 <code>linkname标签作用.md</code>，其中引用了图片等外部文件，那么需在资料贴所在目录的 <code>res</code> 子目录下建立名为 <code>linkname标签作用</code> 的子目录，并将外部文件置于其中同步提起 pr。资料贴的文件名应该是其内容的梗概，形如 <code>xxx.md</code> 这样无法一眼看出内容的 pr 将不会被接受。</p>
+<p>您可以对已有的资料贴进行增补，哪怕该贴并非由您创建。资料贴内部以树形结构存储主贴、回帖，回帖可嵌套，形如：</p>
+<pre><code>## 赵小二
+原帖内容
+***
+
+&gt; ## 张三
+&gt; 回帖内容
+&gt; ***
+&gt;
+&gt;&gt; ## 王五
+&gt;&gt; 回帖的回帖1
+&gt;&gt; ***
+&gt;&gt;
+&gt;&gt; ## 李四
+&gt;&gt; 回帖的回帖2
+&gt;&gt; ***
+&gt;&gt;
+</code></pre>
+<p>帖子间的递进关系以引用符号 <code>&gt;</code> 确定，N 级回帖每行前有 N 个 <code>&gt;</code>，对某个帖子的回帖，视为该帖子的一部分，由于符号 <code>&gt;</code> 的该特定含义，因此帖子内容中不可再使用它，以免引起从属错误。</p>
+<p>除行首符号 <code>&gt;</code> 外：帖子的头部应为单行 <code>## 昵称</code>，尾部应为单行分割线 <code>***</code>，除此之外，各级别的 <code>#</code> 标题符号，分割线符号 <code>---</code>、<code>***</code>、<code>___</code>不应出现在帖子的其余部分。在帖子内容中，列表符<code>1. </code>和<code>- </code>、制表符、粗体符、斜体符、图片引用均可使用。为了让社区能熟悉您，我们建议您在选定昵称后尽量不要随意变更。</p>
+<p>为了让您的回帖更容易被看见，建议您回复时，在紧贴被回复帖子的正文结束处插入（既在帖子的子贴列表的头部插入）。特别需要注意的是：<strong>您只能新增回帖，若 pr 删除或修改了资料贴的其它部分，该 pr 不会被接受</strong>。该规则意味着无论是您创建的资料贴、还是您增补的评论，pr 一旦通过，提交的内容将无法修改。该规则对资料贴引用的外部文件同样有效，既：您不能修改或删除已有的外部引用文件，因此当您的 pr 中包含引用文件时，请特别注意不要与已有文件重名。</p>
+<p>总结：</p>
+<ul>
+<li>只增不删，贴名为标题</li>
+<li>资源文件位于同级 <code>res</code> 下的同贴名目录下</li>
+<li><code>&gt;</code> 用于确定帖子递进关系</li>
+<li>首行 <code>## 昵称</code>，尾行 <code>***</code></li>
+<li>通过预览检查格式是否正确</li>
+</ul>
+<hr />
+<h2 id="基本礼仪"><a class="header" href="#基本礼仪">基本礼仪</a></h2>
+<ul>
+<li>请不要提交我们面对面交流时您不会说的那些话；</li>
+<li>尽量提供有建设性的内容；</li>
+<li>尝试提交违法信息可能将您和我们带入险境；</li>
+<li>当您对内容的格式有拿不准的地方时，请参考已有的帖子。</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="站务"><a class="header" href="#站务">站务</a></h1>
+<p>这里用于凹库本身的讨论。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="灌水"><a class="header" href="#灌水">灌水</a></h1>
+<p>这里用于灌水聊天。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="新人报道"><a class="header" href="#新人报道">新人报道</a></h1>
+<p>凹库新人请来这里做简单的自我介绍。</p>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="丁尔男"><a class="header" href="#丁尔男">丁尔男</a></h2>
+<p>各位凹库同仁大家好！编译器 wasm 后端和运行时是我目前的主要开发方向。希望在不久的将来使用凹语言做一些小游戏。</p>
+<p>除码农身份之外，我是个海水缸玩家、园艺新手，养了两条分别名为“汉堡”和“皮皮”的秋田犬：</p>
+<p><img src="%E7%AB%99%E5%8A%A1/%E6%96%B0%E4%BA%BA%E6%8A%A5%E5%88%B0/res/%E4%B8%81%E5%B0%94%E7%94%B7/1.jpg" alt="" /></p>
+<p>欢迎同好者来撩，凹库凹库！</p>
+<hr />
+<div style="break-before: page; page-break-before: always;"></div><h2 id="柴树杉"><a class="header" href="#柴树杉">柴树杉</a></h2>
+<p>各位凹库同仁大家好！作为半路出家的半老码农，想分享下“Slow is fast”的理解。Fast的好处大家已经都知道了，正如歌者所言：“你再快也有比你更快的”。同样，你再慢也有比你更慢的。比如，作为国产语言和中文语言的支持者，在大学刚接触编程时曾梦想啥时候能在日常使用国产或中文来编程。但是十几二十年过去了依然没有看到大牛或大厂站出来解决这个问题，作为半路出家面临半路下岗的国产码农就只能自己上了。</p>
+<p>我现在主要关注凹如何能活下来、以及可能有哪些因素死去，希望能让语言获得比我更久一点。正如那句话所言：当建筑和艺术都已经完蛋的时候，只有代码还在说话！随着数字化彻底浸入人类社会，我不再把它当作一个完全的科幻。</p>
+<p>欢迎大家来凹库交流！</p>
+<hr />
+<div style="break-before: page; page-break-before: always;"></div><h2 id="赵普明"><a class="header" href="#赵普明">赵普明</a></h2>
+<p>各位凹库的小伙伴大家好！</p>
+<p>我是赵普明，一个马上就步入不惑之年的新手码农。
+我之前做过Java（广告平台，Spring全家桶）、Lua（OpenResty应用）、C++（量化交易相关的项目）、Go（各人项目，网站的后台），但这几个语言及生态都说不上精通。</p>
+<p>我个人最喜欢的语言是D和Kotlin。</p>
+<p>我的程序员梦想之一就是做一个理想的D语言，既能像C那样贴近底层，也能像C++一样做复杂的模板编程，还能像Python一样做各种快速原型。</p>
+<p>但这显然不是一件容易的事情，实际上我连D的源代码都看不太懂。编译器的开发，对我来说难度过高了。
+直到读了《Writing an Interpreter/Compiler in Go》这套书，才终于算是对编译器技术入门了。
+有了这个基础，我用Go写了一个简单的Go语言子集的解释器。然后偶然的机会见到了uGo项目，发现和我的想法非常像，继而才发现了凹语言，并加入到这个家庭里来。</p>
+<p>我希望凹语言能成长为一门像C++/D那样综合实力很强的语言，而且还能避免C++/D所犯的错误。这是我加入凹语言项目时所报的初衷。</p>
+<p>当然，这只是我个人的希望，凹语言的焦点现在是，将来也可能一直是wasm生态。凹语言的理念更贴近于Go：Simplicity is complicated. Slow is fast。
+所以如何在这两者之间做个折衷，也是我接下来关注的重点。</p>
+<p>在凹语言生态中我计划参与的方向有：</p>
+<ul>
+<li>中文语法设计与开发。这个是我现在正在做的，也是2023年的主要任务。我的目标是让中文语法达到和凹英文语法一对一的匹配，并为所有的凹示例配套可执行的中文示例。</li>
+<li>标准库。这里我感兴趣的是io和http相关的部分。因为之前用Go开发过我个人网站的后台，我的目标是把它替换成凹语言来实现。如果有机会我会学习并参与这些库的实现。</li>
+<li>前端集成。研究如何用凹语言（通过wasm）来进行前端开发。最好能把凹语言和javascript生态的桥梁搭起来。我关注的一个重点是vscode的集成，如果能用凹语言开发vscode的插件就完美了。</li>
+<li>游戏编程。游戏编程也是我的儿时梦想之一，但现实很骨感，我从来就没弄懂过它。凹的贪吃蛇示例让我看到了从头开始的希望。希望能借着凹的成长，我也能开发出自己喜欢的游戏来。</li>
+<li>编程教育。我个人今年打算做个程序员知识分享的应用。因此编程教育是必要的工具。我打算先从相对简单的娃娃编程开始。</li>
+</ul>
+<p>计划很多，但精力有限，所以我今年的保底目标就是实现凹中文版，其他项目有序进展即可。</p>
+<p>希望有共通的计划的小伙伴们可以一起合作，把凹语言搞起来！凹库凹库！</p>
+<hr />
+<div style="break-before: page; page-break-before: always;"></div><h1 id="站务讨论"><a class="header" href="#站务讨论">站务讨论</a></h1>
+<p>这里用于讨论凹库的功能等站务。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="用户组user"><a class="header" href="#用户组user">用户组(User)</a></h1>
+<p>这里用于汇总凹语言使用的内容。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="新手入门"><a class="header" href="#新手入门">新手入门</a></h1>
+<p>这里用于汇总凹语言的新手教程。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="综合讨论"><a class="header" href="#综合讨论">综合讨论</a></h1>
+<p>与凹语言使用相关，而又没有其它更适合区的内容都放在这里。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="进阶使用"><a class="header" href="#进阶使用">进阶使用</a></h1>
+<p>这里用于汇总凹语言的进阶使用技巧。</p>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="丁尔男-1"><a class="header" href="#丁尔男-1">丁尔男</a></h2>
+<p>在某些底层 <code>.wa</code> 代码，比如堆管理模块中，会出现两个特别的编译标记：<code>#wa:runtime_getter</code> 和 <code>#wa:runtime_setter</code>，它们一般用于需要直接通过地址读写内存的情况。用法如下：</p>
+<ul>
+<li>
+<p><code>#wa:runtime_getter</code> 使用这个标记的函数，签名形式必须为: <code>func XXX(ptr u32) =&gt; T</code><br />
+其中，<code>T</code> 是一个基本数据类型或由基本数据类型组合而成的结构体类型。使用该标记修饰的函数，只声明不实现，编译器会自动生成其函数体，用于从 <code>ptr</code> 地址的内存中读取一个类型为 <code>T</code> 的值。</p>
+</li>
+<li>
+<p><code>#wa:runtime_setter</code> 使用这个标记的函数，签名形式必须为: <code>func YYY(ptr u32, data T)</code><br />
+其中，<code>T</code> 是一个基本数据类型或由基本数据类型组合而成的结构体类型。使用该标记修饰的函数，只声明不实现，编译器会自动生成其函数体，用于将 <code>data</code> 值写入内存的 <code>ptr</code> 地址处。</p>
+</li>
+</ul>
+<p>一个实际的用例如下：</p>
+<pre><code class="language-wa">//版权 @2022 凹语言 作者。保留所有权利。
+
+type Block struct{
+	size: u32
+	used: u32
+    next: u32
+}
+
+#wa:runtime_getter
+func GetBlock(ptr: u32) =&gt; Block
+
+#wa:runtime_setter
+func SetBlock(ptr: u32, data: Block)
+
+// 堆基址
+var heap_base u32
+
+func main(){
+	//从heap_base地址中读取Block：
+	head := GetBlock(heap_base)
+
+	//从head.next地址中读取next：
+	next := GetBlock(head.next)
+	next.used = 1
+
+	//next写入head.next地址：
+	SetBlock(head.next, next)
+}
+</code></pre>
+<p>上述代码中，函数 <code>GetBlock</code> 和 <code>SetBlock</code> 的声明分别使用了 <code>#wa:runtime_getter</code> 和 <code>wa:runtime_setter</code> 标记，编译器会自动生成它们的函数体，比如 wasm 后端会生成如下：</p>
+<pre><code class="language-wat">(func $__main__.GetBlock (export &quot;__main__.GetBlock&quot;) (param $addr i32) (result i32 i32 i32)
+  local.get $addr
+  i32.load offset=0 align=1
+  local.get $addr
+  i32.load offset=4 align=1
+  local.get $addr
+  i32.load offset=8 align=1
+) ;;__main__.GetBlock
+
+(func $__main__.SetBlock (export &quot;__main__.SetBlock&quot;) (param $addr i32) (param $data.size i32) (param $data.used i32) (param $data.next i32)
+  local.get $addr
+  local.get $data.size
+  i32.store offset=0 align=1
+  local.get $addr
+  local.get $data.used
+  i32.store offset=4 align=1
+  local.get $addr
+  local.get $data.next
+  i32.store offset=8 align=1
+) ;;__main__.SetBlock
+</code></pre>
+<p>若没有这两个标记，通过内存地址直接读写结构体需要手动计算各个成员的偏移值，这两个编译标记可以简化该操作，有助于提高底层代码的开发效率和可维护性。</p>
+<hr />
+<div style="break-before: page; page-break-before: always;"></div><h1 id="开发组dev"><a class="header" href="#开发组dev">开发组(Dev)</a></h1>
+<p>这里用于汇总凹语言开发相关的内容。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="包package"><a class="header" href="#包package">包(Package)</a></h1>
+<p>这里用于汇总功能性的包。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="编译器compiler"><a class="header" href="#编译器compiler">编译器(Compiler)</a></h1>
+<p>这里用于汇总凹语言编译器相关的内容。</p>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="柴树杉-1"><a class="header" href="#柴树杉-1">柴树杉</a></h2>
+<p>凹语言本身目前缺少完备的异常和错误等规范，因此海不具备构建单元测试工具的条件。但随着项目标准库的启动和编译器本身的复杂化，同时为了向可用性的目标逼近对于代码的稳健性和测试都更加迫切。因此迫切需要一个适合当前需求的测试方案。</p>
+<p>为了方便被集成，凹语言提供了api包，可以作为Go语言环境内的脚本被执行：</p>
+<pre><code class="language-go">package main
+
+import (
+	&quot;fmt&quot;
+	&quot;wa-lang.org/wa/api&quot;
+)
+
+func main() {
+	output, err := api.RunCode(api.DefaultConfig(), &quot;hello.wa&quot;, `func main { println(42) }`)
+	fmt.Print(string(output), err)
+}
+</code></pre>
+<p>以上可以通过 <code>api.RunCode</code> 来执行一个凹程序，同时获得返回结果或错误信息。因此可以尝试基于该API来设计临时的测试工具。</p>
+<p>比如有 <code>hash/crc32</code> 包，对应的目录文件如下：</p>
+<pre><code>/hash/crc32/
+  |-- crc32.wa // 实现代码
+  |-- test/test_01.wa         // 测试代码1
+  |-- test/test_01.stdout.txt // 测试代码1 正常输出文件
+  |-- test/test_01.stderr.txt // 测试代码1 错误输出文件
+</code></pre>
+<p>因此可以构建一个自动扫描目录大工具，当发现 <code>test_xxx.wa</code> 模式的文件时，自动通过 <code>api.RunCode</code> 加载该文件并比对输出结果和错误信息。每个 <code>test_xxx.wa</code> 文件类似集成测试是独立执行的，不像单元测试那种效率更好。不过应该可以满足当前阶段测试需求。</p>
+<p>基于以上的思路，每个标准库的测试代码可以在 test 子目录单独维护管理，也可以用于普通模块的测试管理。</p>
+<p>抛砖引玉下，欢迎提供更多建议！</p>
+<hr />
+<div style="break-before: page; page-break-before: always;"></div><h1 id="应用app"><a class="header" href="#应用app">应用(App)</a></h1>
+<p>这里用于汇总使用凹语言开发的应用。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="运行环境env"><a class="header" href="#运行环境env">运行环境(Env)</a></h1>
+<p>这里用于汇总凹语言程序的运行环境，如 Playground 等运行框架。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="综合讨论common"><a class="header" href="#综合讨论common">综合讨论(Common)</a></h1>
+<p>这里用于汇总日常讨论、开发会议安排等内容。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="决策委员会board"><a class="header" href="#决策委员会board">决策委员会(Board)</a></h1>
+<p>这里用于发布决策委员会的公开信息。</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                        
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                            </nav>
+
+        </div>
+
+        
+        
+        
+                <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+        
+                <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+                        <script type="text/javascript">
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+                
+    </body>
+</html>
